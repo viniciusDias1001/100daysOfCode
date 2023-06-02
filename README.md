@@ -55,7 +55,7 @@
 ---
 # Informações Adicionais
 
-- Peço informações pois tenho o objetivo que no final dos 100 dias, desenvolva uma aplicação web sobre esse projeto
+- Peço informações pessoais, sobre o perfil de cada um pois tenho o objetivo que no final dos 100 dias, desenvolva uma aplicação web sobre esse projeto
 
 
 - Lembre-se um bom codigo tem testes, estão lembre-se deles
