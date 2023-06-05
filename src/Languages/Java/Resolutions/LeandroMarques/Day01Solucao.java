@@ -1,7 +1,7 @@
 package src.Languages.Java.Resolutions.LeandroMarques;
 import java.util.*;
 
-public class Day1 {
+public class Day01Solucao {
     private static List<Integer> listPares = new ArrayList<>();
     private static List<Integer> listImpares = new ArrayList<>();
 
@@ -38,7 +38,7 @@ public class Day1 {
         }
 
     public static void main(String[] args) {
-        Day1 solucao = new Day1();
+        Day01Solucao solucao = new Day01Solucao();
         Scanner input = new Scanner(System.in);
         int quantosNumerosVaoSerAdicionados;
 
