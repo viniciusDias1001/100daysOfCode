@@ -1,5 +1,5 @@
 package src.Languages.Java.Resolutions.LeandroMarques;
 
-public class TesteDay1 {
+public class Day01Teste {
 
 }
