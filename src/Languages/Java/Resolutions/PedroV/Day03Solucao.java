@@ -33,11 +33,6 @@ public class Day03Solucao {
     }
 
 
-    public void run(){
-        layout();
-    }
-
-
     public void layout(){
         Scanner input = new Scanner(System.in);
         Boolean start = false;
@@ -168,13 +163,9 @@ public class Day03Solucao {
     }
 
 
-
-
-
-
-
-
-
+    public void run(){
+        layout();
+    }
 
 
     public static void main(String[] args) {

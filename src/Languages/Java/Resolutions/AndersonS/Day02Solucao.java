@@ -1,11 +1,13 @@
 package src.Languages.Java.Resolutions.AndersonS;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Scanner;
 
+
 public class Day02Solucao {
+    private static ArrayList<ArrayList<String>> arrayDeArrayDeCompras = new ArrayList<>();
+    private static int numeroDeCompras = solicitarNumeroDeLinhas();
 
     public static boolean verificaNumeroDeLinhas(int numero){
         if (numero >= 100 || numero < 1){
@@ -32,9 +34,9 @@ public class Day02Solucao {
 
         Scanner input = new Scanner(System.in);
 
-         boolean numeroDeLinhasAprovado = false;
+        boolean numeroDeLinhasAprovado = false;
 
-         int numeroDeLinhas = 0;
+        int numeroDeLinhas = 0;
 
         do{
             notificacaoDeErroNumeroDeLinhas();
@@ -46,7 +48,7 @@ public class Day02Solucao {
 
         return numeroDeLinhas;
     }
-    public static String solicitarCompra(){
+    public static String solicitarListaCompra(){
 
         Scanner input = new Scanner(System.in);
 
@@ -66,29 +68,23 @@ public class Day02Solucao {
         return comprasArraylist;
     }
     public static ArrayList<String> verificaPedidoRepetido(ArrayList<String> comprasArraylist){
-
         HashSet<String> comprasHashSet = new HashSet<>(comprasArraylist);
-
         return new ArrayList<String>(comprasHashSet);
     }
+
     public static void solicitarListasDeCompras(int numeorDeCompras){
-
         for (int i = 0; i < numeorDeCompras; i++){
-
-            String comprasString = solicitarCompra();
-
+            String comprasString = solicitarListaCompra();
             ArrayList<String> comprasArrayList = transFormarEmArrayList(comprasString);
-
             comprasArrayList = verificaPedidoRepetido(comprasArrayList);
-
             Collections.sort(comprasArrayList);
 
             arrayDeArrayDeCompras.add(comprasArrayList);
         }
     }
 
-    private static ArrayList<ArrayList<String>> arrayDeArrayDeCompras = new ArrayList<>();
-    private static int numeroDeCompras = solicitarNumeroDeLinhas();
+
+
     public static void main(String[] args) {
 
         if(verificaNumeroDeLinhas(numeroDeCompras) == false){
@@ -101,5 +97,5 @@ public class Day02Solucao {
             System.out.println(arrayDeArrayDeCompras.get(i));
         }
     }
-
 }
+
