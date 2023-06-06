@@ -9,17 +9,15 @@ public class Day01Solucao {
 
     public static void main(String[] args) {
 
-        Day01Solucao day01Solucao = new Day01Solucao();
-
         Scanner input = new Scanner(System.in);
 
         System.out.println("Digite a quantiade de números ");
         int numeroRecebido = input.nextInt();
 
-        boolean margemDeNumeroTestada = day01Solucao.testaMargemDeNumeros(numeroRecebido);
+        boolean margemDeNumeroTestada = testaMargemDeNumeros(numeroRecebido);
 
         if (margemDeNumeroTestada == false){
-            numeroRecebido = day01Solucao.validadorDeEntrada(numeroRecebido);
+            numeroRecebido = validadorDeEntrada(numeroRecebido);
         }
 
         for ( int i=0 ;i < numeroRecebido;i++){
@@ -29,7 +27,7 @@ public class Day01Solucao {
             int valorInteiroDaRodada = input.nextInt();
             input.nextLine();
 
-            if (day01Solucao.testaParidade(valorInteiroDaRodada)){
+            if (testaParidade(valorInteiroDaRodada)){
                 numerosPares.add(valorInteiroDaRodada);
             }
             else{
