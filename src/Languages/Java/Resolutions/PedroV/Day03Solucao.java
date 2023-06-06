@@ -121,7 +121,7 @@ public class Day03Solucao {
             if (uniforms.isEmpty()){
                 out = "Doesn't have any uniforms yet";
             } else
-                out = "created uniforms: " + uniforms.size();
+                out = ":)";
             System.out.println("Class " + classNumber + ": " + out );
         }
         System.out.println("want to create uniform for which class?");
