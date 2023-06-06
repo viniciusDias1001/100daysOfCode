@@ -1,4 +1,4 @@
-package src.Languages.Java.Resolutions.AndersonS;
+package src.Languages.Java.Resolutions.AndersonS.Day01;
 
 import java.util.*;
 

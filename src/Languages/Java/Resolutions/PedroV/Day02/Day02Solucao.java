@@ -1,4 +1,4 @@
-package src.Languages.Java.Resolutions.PedroV;
+package src.Languages.Java.Resolutions.PedroV.Day02;
 
 import java.util.*;
 

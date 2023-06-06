@@ -1,4 +1,4 @@
-package src.Languages.Java.Resolutions.AndersonS;
+package src.Languages.Java.Resolutions.AndersonS.Day02;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;

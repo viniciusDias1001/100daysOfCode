@@ -1,4 +1,4 @@
-package src.Languages.Java.Resolutions.LeandroMarques;
+package src.Languages.Java.Resolutions.LeandroMarques.Day01;
 import java.util.*;
 
 public class Day01Solucao {

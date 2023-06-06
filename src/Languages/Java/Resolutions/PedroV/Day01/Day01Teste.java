@@ -1,7 +1,8 @@
-package src.Languages.Java.Resolutions.PedroV;
+package src.Languages.Java.Resolutions.PedroV.Day01;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import src.Languages.Java.Resolutions.PedroV.Day01.Day01Solucao;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package src.Languages.Java.Resolutions.PedroV;
+package src.Languages.Java.Resolutions.PedroV.Day01;
 import java.util.*;
 
 public class Day01Solucao {

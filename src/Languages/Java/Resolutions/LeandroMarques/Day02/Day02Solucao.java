@@ -1,4 +1,4 @@
-package src.Languages.Java.Resolutions.LeandroMarques;
+package src.Languages.Java.Resolutions.LeandroMarques.Day02;
 
 import java.util.*;
 

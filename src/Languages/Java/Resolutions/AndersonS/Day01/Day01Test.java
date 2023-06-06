@@ -1,10 +1,10 @@
-package src.Languages.Java.Resolutions.AndersonS;
+package src.Languages.Java.Resolutions.AndersonS.Day01;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import src.Languages.Java.Resolutions.AndersonS.Day01.Day01Solucao;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Day01Test {
 
