@@ -5,7 +5,7 @@ Desafio:
 
 
  Pedro trabalha sempre até tarde todos os dias, com isso tem
-pouco tempo tempo para as tarefas doméstica. Para economizar 
+pouco tempo para as tarefas doméstica. Para economizar 
 tempo ele faz a lista de compras do supermercado em um aplicativo
 e costuma anotar cada item na mesma hora que percebe a falta dele
 em casa.
