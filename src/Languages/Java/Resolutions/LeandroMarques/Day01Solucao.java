@@ -5,8 +5,6 @@ public class Day01Solucao {
     private static List<Integer> listPares = new ArrayList<>();
     private static List<Integer> listImpares = new ArrayList<>();
 
-
-
     public static void ordenaNumerosNasLista(int addNumero) {
         if(addNumero % 2 == 0 && addNumero < 10000 && addNumero > 0){
             listPares.add(addNumero);
