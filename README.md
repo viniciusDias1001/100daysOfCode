@@ -34,8 +34,7 @@ asdfgasdg
 ---
 # Como participar 
 
-- 1° Crie um Fork do projeto na sua conta (Sempre)
-
+- 1° Crie um Fork do projeto na sua conta 
 
 - 2° Clone o Fork do Projeto (Da sua conta)
 
