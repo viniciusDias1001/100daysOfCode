@@ -34,26 +34,23 @@
 ---
 # Como participar 
 
-- 1° Crie um Fork do projeto na sua conta 
+- 1° Clone o Projeto (Na sua maquina)
 
-
-- 2° Clone o Fork do Projeto (Da sua conta)
+- 2° Crie uma nova branch.
 
 - 3° escolha uma linguagem, e vá até a pasta dessa linguagem
 
 
-- 4° Crie um arquivo `.md` com seu nome e suas informações na pasta Developers, siga o exemplo do arquivo `Pessoa.md` 
-
+- 4° Crie um arquivo `.md` com seu nome e suas informações na pasta Developers, siga o exemplo do arquivo `Pessoa.md`
 
 
 - 5° Crie uma pasta com seu nome na pasta Resolutions, nessa pasta coloque o arquivo de resposta do seu desafio, com titulo do Day.    Exemplo: Day01Resolvido.java
 
 
-- 5° Após isso faça um Pull Request da suas soluções, (das duas Fork) 
+- 5° Após isso faça um Pull Request da sua branch
 
 
 - 6° Caso não saiba fazer um Pull Request veja esse video: https://www.youtube.com/watch?v=RNbKd8cD0LI
-
 
 ---
 # Informações Adicionais
