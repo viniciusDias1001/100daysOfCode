@@ -23,7 +23,7 @@ trabalhando como estagíario e freelancer.
 
 
 
-## *Commitment Pledge *
+## *Commitment Pledge*
 
 
 Declaro solenemente que irei assumir todos os desafios com dedicação máxima, a fim de solidificar meus conhecimentos. Absterei-me de buscar soluções prontas ou algoritmos na internet e não recorrerei a qualquer forma de inteligência artificial para realizar as tarefas em meu lugar. Comprometo-me a enfrentar cada desafio com minhas próprias habilidades e esforços, buscando aprimorar minha compreensão e proficiência no assunto.
