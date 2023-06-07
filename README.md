@@ -34,7 +34,7 @@
 ---
 # Como participar 
 
-- 1° Crie um Fork do projeto na sua conta 
+- 1° Crie um Fork do projeto na sua conta (Sempre)
 
 
 - 2° Clone o Fork do Projeto (Da sua conta)
