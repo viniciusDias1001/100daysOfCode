@@ -1,7 +1,7 @@
 # ☕ 100 Days of Code Challenge 
 
 *Este repositório foi criado para reunir códigos e exercícios desenvolvidos como parte de um desafio de 100 dias de programação, com foco nas linguagens Java, Python, C#, JavaScript e Ruby. O objetivo principal deste desafio é aprimorar os conhecimentos e habilidades nessas linguagens de programação. Aqui você encontrará uma variedade de códigos e desafios que foram criados durante o percurso desse desafio, permitindo explorar diferentes conceitos e práticas em cada uma das linguagens mencionadas. Através deste repositório, esperamos compartilhar conhecimento, incentivar a prática contínua e proporcionar um ambiente colaborativo para aprendizado e crescimento na programação.*
-
+asdfgasdg
 ---
 
 
