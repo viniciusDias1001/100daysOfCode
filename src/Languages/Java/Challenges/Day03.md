@@ -29,3 +29,10 @@ Saída:
  Para cada caso de entrada deverão ser impressas as informações ordenadas pela
 cor em ordem ascendente, seguido pelos tamanhos em ordem descendente e por último
 por ordem ascendente de nome, conforme o exemplo abaixo.
+
+
+exemplo saida: 
+
+Maria
+Red
+P
