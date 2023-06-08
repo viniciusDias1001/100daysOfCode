@@ -1,7 +1,5 @@
 package src.Languages.Java.Resolutions.PedroV.Day04;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Day04Solucao {
   private Integer numberOfClients;
@@ -42,6 +40,17 @@ public class Day04Solucao {
               System.out.println("add a list with " + this.numberOfClients + " client/clients");
       }
 
+  public void sortList(){
+      List<Integer> newListOfIntegerOut = new ArrayList<>();
+      for (String clientString : this.arraysClients){
+          newListOfIntegerOut.add(Integer.parseInt(clientString));
+
+      }
+
+      Collections.sort(newListOfIntegerOut, Comparator.reverseOrder());
+      System.out.println("SortList: " + newListOfIntegerOut);
+  }
+
 
 
 
@@ -53,20 +62,20 @@ public class Day04Solucao {
 
 
             }
-
             int position = 0;
           for (int i = 1; i < newListOfInteger.size(); i++){
-              if (newListOfInteger.get(i) < newListOfInteger.get(position)){
-                  System.out.println("Menor");
-                  position++;
+              if (newListOfInteger.get(i) < newListOfInteger.get(1)){
+                  newListOfInteger.remove(0);
+
 
               } else
-                  System.out.println("maior");
-              position++;
+                  newListOfInteger.remove(0);
+                 quant++;
+
 
           }
 
-          System.out.println(quant);
+          System.out.println("\n" + "Number of customers who moved: " + quant);
       }
 
   public boolean validListNumber(String list){
@@ -82,10 +91,7 @@ public class Day04Solucao {
       receiveClientsAndAddClients();
       addClients();
       checkHowmManyCustomersAreOutOfPlace();
-      System.out.println(this.arraysClients);
-
-
-
+      sortList();
   }
 
 
