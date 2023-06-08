@@ -1,7 +1,5 @@
 package src.Languages.Java.Resolutions.PedroV.Day04;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Day04Solucao {
   private Integer numberOfClients;
@@ -12,9 +10,23 @@ public class Day04Solucao {
 
   public void Queuesize(){
       Scanner input = new Scanner(System.in);
-      System.out.println("What is the Queue Size ?");
-      this.numberOfClients = input.nextInt();
-      System.out.println("\n");
+      boolean start = false;
+
+
+      while (!start){
+
+          try{
+              System.out.println("What is the Queue Size ?");
+              this.numberOfClients = input.nextInt();
+              System.out.println("\n");
+              start = true;
+          }catch (InputMismatchException e){
+              System.out.println("enter numbers only");
+              input.next();
+
+          }
+
+      }
 
   }
 
@@ -32,6 +44,7 @@ public class Day04Solucao {
                 System.out.println("enter numbers only");
 
   }}
+
   public void addClients(){
           if (this.receivedList.length == this.numberOfClients) {
               for (String client : this.receivedList) {
@@ -42,31 +55,39 @@ public class Day04Solucao {
               System.out.println("add a list with " + this.numberOfClients + " client/clients");
       }
 
+  public List<Integer> sortList(List<String> list){
+      List<Integer> newListOfIntegerOut = new ArrayList<>();
+      for (String clientString : list){
+          newListOfIntegerOut.add(Integer.parseInt(clientString));
+      }
+      Collections.sort(newListOfIntegerOut, Comparator.reverseOrder());
+      System.out.println("SortList: " + newListOfIntegerOut);
 
+      return newListOfIntegerOut;
+  }
 
+  public Integer checkHowmManyCustomersAreOutOfPlace(List<String> list){
 
-      public void checkHowmManyCustomersAreOutOfPlace(){
           List<Integer> newListOfInteger = new ArrayList<>();
           Integer quant = 0;
-            for (String clientString : this.arraysClients){
+            for (String clientString : list){
                 newListOfInteger.add(Integer.parseInt(clientString));
-
-
             }
-
             int position = 0;
-          for (int i = 1; i < newListOfInteger.size(); i++){
-              if (newListOfInteger.get(i) < newListOfInteger.get(position)){
-                  System.out.println("Menor");
+            int fm = 1;
+          for (int i = 0; i < newListOfInteger.size() - 1; i++){
+              if (newListOfInteger.get(position) > newListOfInteger.get(fm )){
+                position++;
+                fm++;
+              } else{
                   position++;
-
-              } else
-                  System.out.println("maior");
-              position++;
-
+                  fm++;
+                  quant++;
+              }
           }
+          System.out.println("\n" + "Number of customers who moved: " + quant);
 
-          System.out.println(quant);
+          return quant;
       }
 
   public boolean validListNumber(String list){
@@ -81,11 +102,8 @@ public class Day04Solucao {
       Queuesize();
       receiveClientsAndAddClients();
       addClients();
-      checkHowmManyCustomersAreOutOfPlace();
-      System.out.println(this.arraysClients);
-
-
-
+      checkHowmManyCustomersAreOutOfPlace(this.arraysClients);
+      sortList(this.arraysClients);
   }
 
 
@@ -111,7 +129,6 @@ public class Day04Solucao {
       day04.run();
 
     }
-
 
 
 }
