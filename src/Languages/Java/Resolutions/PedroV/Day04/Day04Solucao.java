@@ -55,22 +55,23 @@ public class Day04Solucao {
               System.out.println("add a list with " + this.numberOfClients + " client/clients");
       }
 
-  public void sortList(){
+  public List<Integer> sortList(List<String> list){
       List<Integer> newListOfIntegerOut = new ArrayList<>();
-      for (String clientString : this.arraysClients){
+      for (String clientString : list){
           newListOfIntegerOut.add(Integer.parseInt(clientString));
       }
       Collections.sort(newListOfIntegerOut, Comparator.reverseOrder());
       System.out.println("SortList: " + newListOfIntegerOut);
+
+      return newListOfIntegerOut;
   }
 
-  public void checkHowmManyCustomersAreOutOfPlace(){
+  public Integer checkHowmManyCustomersAreOutOfPlace(List<String> list){
 
           List<Integer> newListOfInteger = new ArrayList<>();
           Integer quant = 0;
-            for (String clientString : this.arraysClients){
+            for (String clientString : list){
                 newListOfInteger.add(Integer.parseInt(clientString));
-
             }
             int position = 0;
             int fm = 1;
@@ -83,9 +84,10 @@ public class Day04Solucao {
                   fm++;
                   quant++;
               }
-
           }
           System.out.println("\n" + "Number of customers who moved: " + quant);
+
+          return quant;
       }
 
   public boolean validListNumber(String list){
@@ -100,8 +102,8 @@ public class Day04Solucao {
       Queuesize();
       receiveClientsAndAddClients();
       addClients();
-      checkHowmManyCustomersAreOutOfPlace();
-      sortList();
+      checkHowmManyCustomersAreOutOfPlace(this.arraysClients);
+      sortList(this.arraysClients);
   }
 
 
