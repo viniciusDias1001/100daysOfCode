@@ -7,26 +7,38 @@ public class Day04Solucao {
 
     private static Scanner input = new Scanner(System.in);
 
-    private static ArrayList<Integer> filaClientesComSMS = new ArrayList<>();
-
-    private static ArrayList<Integer> ArrayListSmsInteiro = new ArrayList<>();
+    private static ArrayList<Integer> arrayListSmsInteiro = new ArrayList<>();
 
     private static int numeroDeCLientes;
 
-//    public static ArrayList<Integer> ordenarMaiorParaMenor(ArrayList<Integer> filaClientesComSMS){
-//
-//
-//
-//    }
+    public static void ordenarMaiorParaMenor(ArrayList<Integer> arrayListSmsInteiro){
+
+        ArrayList<Integer> trocaveis = new ArrayList<>();
+        int trocas = 0;
+
+        for (int i = 0; i < arrayListSmsInteiro.size() -1 ; i++){
+
+            for (int b = i ; b < arrayListSmsInteiro.size(); b++){
+                if (arrayListSmsInteiro.get(i) < arrayListSmsInteiro.get(b) && !trocaveis.contains(arrayListSmsInteiro.get(b))){
+                    trocaveis.add(arrayListSmsInteiro.get(b));
+                    trocas++;
+                    break;
+                }
+            }
+
+        }
+        System.out.println(trocas);
+
+    }
 
     public static void smsTransformaStringParaInteiro(String[] arraySms){
 
         if (boleanoTransformarEmArrayListInteiroSms(arraySms) == false){
-            validadorTransformarArrayStringParaInteiro(arraySms);
+            arraySms = validadorTransformarArrayStringParaInteiro(arraySms);
         }
         for (String smsSring: arraySms){
             Integer smsInteiro = Integer.parseInt(smsSring);
-            ArrayListSmsInteiro.add(smsInteiro);
+            arrayListSmsInteiro.add(smsInteiro);
         }
     }
 
@@ -44,7 +56,7 @@ public class Day04Solucao {
         for (String StringSms: arraySms){
             try {
                 Integer smsInteiro = Integer.parseInt(StringSms);
-            }catch (Exception e){
+            }catch (NumberFormatException e){
                 return false;
             }
         }
@@ -76,8 +88,6 @@ public class Day04Solucao {
 
     public static String[] recebeArraySMS(){
 
-        Scanner input = new Scanner(System.in);
-
         ArrayList<String> arrayListSmsString = new ArrayList<>();
 
         String sms = input.nextLine();
@@ -85,6 +95,14 @@ public class Day04Solucao {
         String [] smsArrayString = sms.split(" ");
 
        return validadorDeTamanhoArrayStringSms(smsArrayString);
+
+    }
+
+    public static ArrayList<Integer> entradaSMS(){
+
+        smsTransformaStringParaInteiro(recebeArraySMS());
+
+        return arrayListSmsInteiro;
 
     }
 
@@ -131,7 +149,10 @@ public class Day04Solucao {
 
         numeroDeCLientes = recebeInteiro();
 
-        smsTransformaStringParaInteiro(recebeArraySMS());
+        System.out.println("Digite os SMS do clientes separados por espaço");
+        entradaSMS();
+
+        ordenarMaiorParaMenor(arrayListSmsInteiro);
 
     }
 
