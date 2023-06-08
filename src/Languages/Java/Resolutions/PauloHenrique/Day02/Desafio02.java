@@ -1,8 +1,10 @@
 package src.Languages.Java.Resolutions.PauloHenrique.Day02;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class Desafio02 {
 
@@ -43,9 +45,13 @@ public class Desafio02 {
         switch (n) {
             case 1:
                 System.out.println("Dentre as " + lists.size() + " listas, somente as lista com produtos sera listadas.");
-                lists.stream().filter(l ->
-                        !l.isEmpty()).forEach(l ->
-                        System.out.println("Lista " + (lists.indexOf(l) + 1) + ": " + l));
+                for (int i = 0; i < lists.size(); i++) {
+                    if (!lists.get(i).isEmpty())
+                    Collections.sort(lists.get(i), String.CASE_INSENSITIVE_ORDER);
+                }
+
+                lists.stream().filter(l -> !l.isEmpty()).
+                        forEach(l -> System.out.println("Lista " + l));
                 break;
             case 2:
                 System.out.print("Qual produto voce deseja adicionar ? ");
