@@ -30,6 +30,7 @@ public class Day04Solucao {
                 System.out.println("enter numbers only");
 
   }}
+
   public void addClients(){
           if (this.receivedList.length == this.numberOfClients) {
               for (String client : this.receivedList) {
@@ -44,37 +45,26 @@ public class Day04Solucao {
       List<Integer> newListOfIntegerOut = new ArrayList<>();
       for (String clientString : this.arraysClients){
           newListOfIntegerOut.add(Integer.parseInt(clientString));
-
       }
-
       Collections.sort(newListOfIntegerOut, Comparator.reverseOrder());
       System.out.println("SortList: " + newListOfIntegerOut);
   }
 
-
-
-
-      public void checkHowmManyCustomersAreOutOfPlace(){
+  public void checkHowmManyCustomersAreOutOfPlace(){
           List<Integer> newListOfInteger = new ArrayList<>();
           Integer quant = 0;
             for (String clientString : this.arraysClients){
                 newListOfInteger.add(Integer.parseInt(clientString));
-
 
             }
             int position = 0;
           for (int i = 1; i < newListOfInteger.size(); i++){
               if (newListOfInteger.get(i) < newListOfInteger.get(1)){
                   newListOfInteger.remove(0);
-
-
               } else
                   newListOfInteger.remove(0);
                  quant++;
-
-
           }
-
           System.out.println("\n" + "Number of customers who moved: " + quant);
       }
 
@@ -117,7 +107,6 @@ public class Day04Solucao {
       day04.run();
 
     }
-
 
 
 }
