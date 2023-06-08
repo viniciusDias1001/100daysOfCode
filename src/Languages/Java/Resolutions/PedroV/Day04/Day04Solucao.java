@@ -10,9 +10,23 @@ public class Day04Solucao {
 
   public void Queuesize(){
       Scanner input = new Scanner(System.in);
-      System.out.println("What is the Queue Size ?");
-      this.numberOfClients = input.nextInt();
-      System.out.println("\n");
+      boolean start = false;
+
+
+      while (!start){
+
+          try{
+              System.out.println("What is the Queue Size ?");
+              this.numberOfClients = input.nextInt();
+              System.out.println("\n");
+              start = true;
+          }catch (InputMismatchException e){
+              System.out.println("enter numbers only");
+              input.next();
+
+          }
+
+      }
 
   }
 
@@ -51,6 +65,7 @@ public class Day04Solucao {
   }
 
   public void checkHowmManyCustomersAreOutOfPlace(){
+
           List<Integer> newListOfInteger = new ArrayList<>();
           Integer quant = 0;
             for (String clientString : this.arraysClients){
@@ -58,12 +73,17 @@ public class Day04Solucao {
 
             }
             int position = 0;
-          for (int i = 1; i < newListOfInteger.size(); i++){
-              if (newListOfInteger.get(i) < newListOfInteger.get(1)){
-                  newListOfInteger.remove(0);
-              } else
-                  newListOfInteger.remove(0);
-                 quant++;
+            int fm = 1;
+          for (int i = 0; i < newListOfInteger.size() - 1; i++){
+              if (newListOfInteger.get(position) > newListOfInteger.get(fm )){
+                position++;
+                fm++;
+              } else{
+                  position++;
+                  fm++;
+                  quant++;
+              }
+
           }
           System.out.println("\n" + "Number of customers who moved: " + quant);
       }
