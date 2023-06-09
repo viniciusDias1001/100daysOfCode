@@ -61,7 +61,7 @@ public class Day05Solucao {
     public void addAlunosNaLista(){
         Scanner entrada = new Scanner(System.in);
        for(int i = 0; i < this.quant; i++){
-           System.out.println("Digite o Nome do Aluno " + i +"e a ficha  obs: Separado por espaço e ficha entre 1 e 500");
+           System.out.println("Digite o Nome do Aluno " + i + " e a ficha  obs: Separado por espaço e ficha entre 1 e 500");
            String nomeFicha = entrada.nextLine();
            String separando [] = nomeFicha.split(" ");
            Integer fichaCerta = Integer.parseInt(separando[1]);
