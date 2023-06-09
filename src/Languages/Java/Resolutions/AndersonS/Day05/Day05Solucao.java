@@ -17,6 +17,15 @@ public class Day05Solucao {
         return null;
     }
 
+    public static int contagemCasaDoMorto(int fichaMorto, ArrayList<Aluno> alunos){
+
+        if (fichaMorto >= alunos.size()){
+            return 1;
+        }
+        return 0;
+
+    }
+
     public static void iniciarBrincadeira() {
 
         int ficha = alunos.get(alunos.size() - 1).getFicha();
@@ -24,50 +33,47 @@ public class Day05Solucao {
 
         Aluno proximoAluno = null;
         Aluno alunoPassado = null;
+        int acrescimoCasaDoMorto = 0;
         int proximaFicha = 0;
 
         while (alunos.size() != 2) {
 
             if (ficha % 2 == 0) {
 
-                if (alunos.indexOf(alunoContagemApartirDele) + ficha >= alunos.size()) {
+                if (alunos.indexOf(alunoContagemApartirDele) + ficha + acrescimoCasaDoMorto >= alunos.size()) {
 
-                    proximoAluno = alunos.get((alunos.indexOf(alunoContagemApartirDele) + ficha) % alunos.size());
+                    proximoAluno = alunos.get((alunos.indexOf(alunoContagemApartirDele) + ficha + acrescimoCasaDoMorto) % alunos.size());
                     proximaFicha = proximoAluno.getFicha();
 
                 } else {
 
-                    proximoAluno = alunos.get((alunos.indexOf(alunoContagemApartirDele) + ficha));
+                    proximoAluno = alunos.get((alunos.indexOf(alunoContagemApartirDele) + ficha + acrescimoCasaDoMorto));
                     proximaFicha = proximoAluno.getFicha();
                 }
             } else if (ficha % 2 != 0) {
 
                 Collections.reverse(alunos);
 
-                if (alunos.indexOf(alunoContagemApartirDele) + ficha >= alunos.size()) {
+                if (alunos.indexOf(alunoContagemApartirDele) + ficha + acrescimoCasaDoMorto >= alunos.size()) {
 
-                    proximoAluno = alunos.get((alunos.indexOf(alunoContagemApartirDele) + ficha) % alunos.size());
+                    proximoAluno = alunos.get((alunos.indexOf(alunoContagemApartirDele) + ficha + acrescimoCasaDoMorto) % alunos.size());
                     proximaFicha = proximoAluno.getFicha();
 
                 } else {
 
-                    proximoAluno = alunos.get((alunos.indexOf(alunoContagemApartirDele) + ficha));
+                    proximoAluno = alunos.get((alunos.indexOf(alunoContagemApartirDele) + ficha + acrescimoCasaDoMorto));
                     proximaFicha = proximoAluno.getFicha();
                 }
                 Collections.reverse(alunos);
             }
-
+            acrescimoCasaDoMorto = contagemCasaDoMorto(proximaFicha,alunos);
             alunos.remove(alunoPassado);
             alunoPassado = proximoAluno;
             ficha = proximaFicha;
             alunoContagemApartirDele = proximoAluno;
-
-            System.out.println(alunos);
-            System.out.println(alunoPassado);
         }
         alunos.remove(alunoPassado);
-        System.out.println(alunos);
-
+        System.out.println("Vencedor: "+ alunos.get(0));
     }
 
     public static void criaAlunoComArray(String[] arrayNomeFicha){
@@ -79,7 +85,6 @@ public class Day05Solucao {
 
             alunos.add(0 , new Aluno(nome, idade));
         }
-        System.out.println(alunos);
     }
 
     public static boolean validaFicha(String[] arrayNomeFicha){
