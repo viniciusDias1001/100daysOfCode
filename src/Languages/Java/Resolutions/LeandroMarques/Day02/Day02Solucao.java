@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Day02Solucao {
     private List<List<String>> todasAsListas = new ArrayList<>();
-    //exclua os itens duplicados da lista de compras e que os ordene alfabeticamente.
+
 
     public void criadorDelistas(int quantidadeDeListasParaCriar) {
         for (int i = 0; i < quantidadeDeListasParaCriar; i++) {

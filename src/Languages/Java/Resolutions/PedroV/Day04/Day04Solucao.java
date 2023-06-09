@@ -7,7 +7,6 @@ public class Day04Solucao {
   private String [] receivedList;
 
 
-
   public void Queuesize(){
       Scanner input = new Scanner(System.in);
       boolean start = false;
@@ -29,7 +28,6 @@ public class Day04Solucao {
       }
 
   }
-
 
   public void receiveClientsAndAddClients(){
       boolean start = false;
@@ -67,7 +65,6 @@ public class Day04Solucao {
   }
 
   public Integer checkHowmManyCustomersAreOutOfPlace(List<String> list){
-
           List<Integer> newListOfInteger = new ArrayList<>();
           Integer quant = 0;
             for (String clientString : list){
@@ -75,7 +72,7 @@ public class Day04Solucao {
             }
             int position = 0;
             int fm = 1;
-          for (int i = 0; i < newListOfInteger.size() - 1; i++){
+          for (int i = 0; i < newListOfInteger.size(); i++){
               if (newListOfInteger.get(position) > newListOfInteger.get(fm )){
                 position++;
                 fm++;
@@ -107,27 +104,12 @@ public class Day04Solucao {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void run(){
       this.bank();
     }
     public static void main(String[] args) {
       Day04Solucao day04 = new Day04Solucao();
       day04.run();
-
     }
 
 
