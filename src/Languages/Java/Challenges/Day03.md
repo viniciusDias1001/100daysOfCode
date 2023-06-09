@@ -40,10 +40,10 @@ Tamanho: P
 exemplo saida: 
 
 Maria
-Vermelho P
+Vermelho G
 
 Maria
 Vermelho M
 
 Nanda
-Vermelho P
+Vermelho G
