@@ -58,7 +58,6 @@ public class Day05Solucao {
         }
 
     }
-
     public void addAlunosNaLista(){
         Scanner entrada = new Scanner(System.in);
        for(int i = 0; i < this.quant; i++){
@@ -76,7 +75,6 @@ public class Day05Solucao {
 
        }
     }
-
     public void JogoCompleto(){
 
         try{
@@ -112,13 +110,9 @@ public class Day05Solucao {
                 }
                 System.out.println("Vencedor(a): " + alunos.get(0).nome);
 
-
             }
 
-        }catch (ArithmeticException e){
-
-        }
-
+        }catch (ArithmeticException e){}
 
     }
 
@@ -129,22 +123,5 @@ public class Day05Solucao {
         day05Solucao.addAlunosNaLista();
         day05Solucao.JogoCompleto();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
