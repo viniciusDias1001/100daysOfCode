@@ -30,9 +30,20 @@ Saída:
 cor em ordem ascendente, seguido pelos tamanhos em ordem descendente e por último
 por ordem ascendente de nome, conforme o exemplo abaixo.
 
+Entrada:
+
+Quantos uniformes: 3
+Nome do aluno: Maria
+Cor: Vermelho
+Tamanho: P
 
 exemplo saida: 
 
 Maria
-Red
-P
+Vermelho G
+
+Maria
+Vermelho M
+
+Nanda
+Vermelho G
