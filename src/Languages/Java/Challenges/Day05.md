@@ -27,12 +27,13 @@ no sentido horário e quando o valor que consta na ficha é ímpar, a contagem
  Desenvolva um programa para que no próximo evento o responsável pela brincadeira
 saiba previamente qual criança irá ser a vencedora de cada grupo, com base nas
 informações fornecidas.
+
 ---
 
 Entrada:
 
 
-A entrada contém vários casos de teste. A primeira linha de cada caso de teste
+ A entrada contém vários casos de teste. A primeira linha de cada caso de teste
 contém um inteiro N (1 ≤ N ≤ 100), indicando a quantidade de alunos que farão parte
 de cada círculo. Em seguida, as N linhas de cada caso de teste conterão duas informações,
 o Nome e o Valor (1 ≤ Valor ≤ 500) que consta na ficha de cada aluno, separados por um
@@ -40,7 +41,7 @@ espaço, na ordem de entrada na formação do círculo inicial.
 
  OBS: O Nome de cada aluno não deverá ultrapassar 30 caracteres e contém apenas letras
 maiúsculas e minúsculas, sem acentos, e o caractere “_”. O final da entrada é indicado
-pelo número zero.
+pelo número zero.dd
 
 ---
 
