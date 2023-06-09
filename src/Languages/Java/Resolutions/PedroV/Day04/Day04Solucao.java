@@ -72,7 +72,7 @@ public class Day04Solucao {
             }
             int position = 0;
             int fm = 1;
-          for (int i = 0; i < newListOfInteger.size() - 1; i++){
+          for (int i = 0; i < newListOfInteger.size(); i++){
               if (newListOfInteger.get(position) > newListOfInteger.get(fm )){
                 position++;
                 fm++;
