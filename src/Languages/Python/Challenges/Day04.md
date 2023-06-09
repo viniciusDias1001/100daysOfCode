@@ -32,8 +32,8 @@ inteiro diz respeito ao segundo cliente, e assim sucessivamente.
 Saída:
 
 Para cada caso de teste, imprima uma linha contendo um inteiro, 
-indicando o número de clientes que precisaram trocar de lugar para ordenar a fila (Quantidade minima de movimentos). 
-e crie uma lista com a lista ordenada de forma correta.
+indicando o número de clientes que não precisaram trocar de lugar mesmo após a fila 
+ser reordenada. e crie uma lista com a lista ordenada de forma correta.
 
 
 Exemplo de Entrada:
