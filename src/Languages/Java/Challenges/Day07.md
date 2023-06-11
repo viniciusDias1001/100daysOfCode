@@ -19,6 +19,7 @@ CBA
 DDD
 
 então cada caractere deverá ser computado como segue:
+
 2 = 2 + 0 + 0 : 'C' no elemento 0 posição 0
 2 = 1 + 0 + 1 : 'B' no elemento 0 posição 1
 2 = 0 + 0 + 2 : 'A' no elemento 0 posição 2
