@@ -35,6 +35,7 @@ Para cada caso de teste, imprima uma linha contendo um inteiro,
 indicando o número de clientes que precisaram trocar de lugar para ordenar a fila (Quantidade minima de movimentos). 
 e crie uma lista com a lista ordenada de forma correta.
 
+---
 
 Exemplo de Entrada:
 5

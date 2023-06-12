@@ -27,4 +27,19 @@ Saída:
  Exiba todos os valores lidos na entrada segundo a ordem apresentada
 acima. Cada número deve ser impresso em uma linha, conforme exemplo de
 saída abaixo.
-  
+
+---
+
+Exemplo de entrada:
+
+How many numbers do you want to add to the Array ?
+
+5
+
+enter a numbers:
+
+4 3 3 6 7
+
+Exemplo de saida:
+
+[4, 6, 7, 3, 3]

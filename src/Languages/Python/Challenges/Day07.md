@@ -44,3 +44,12 @@ Saída:
 
 Para cada caso de teste imprima o valor de hash que é calculado conforme o
 exemplo apresentado acima.
+
+Exemplo de entrada:
+
+CBA
+DDD
+
+Exemplo de Saida:
+
+O cálculo final de hash será = 21.
