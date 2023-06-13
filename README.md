@@ -45,13 +45,13 @@
 
 
 
-- 5° Crie uma pasta com seu nome na pasta Resolutions, nessa pasta coloque o arquivo de resposta do seu desafio, com titulo do Day.    Exemplo: Day01Resolvido.java
+- 6° Crie uma pasta com seu nome na pasta Resolutions, nessa pasta coloque o arquivo de resposta do seu desafio, com titulo do Day.    Exemplo: Day01Resolvido.java
 
 
-- 5° Após isso faça um Pull Request da suas soluções, (das duas Fork) 
+- 7° Após isso faça um Pull Request da suas soluções, (das duas Fork) 
 
 
-- 6° Caso não saiba fazer um Pull Request veja esse video: https://www.youtube.com/watch?v=RNbKd8cD0LI
+- 8° Caso não saiba fazer um Pull Request veja esse video: https://www.youtube.com/watch?v=RNbKd8cD0LI
 
 
 ---
