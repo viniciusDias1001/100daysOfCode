@@ -2,15 +2,16 @@
 ## Ordenando Números Pares e Ímpares
 
 Desafio:
+
 Crie um programa onde você receberá valores inteiros
 não negativos como entrada.
 
- Ordene estes valores de acordo com o seguinte critério:
+Ordene estes valores de acordo com o seguinte critério:
 
 Primeiro os Pares
- Depois os Ímpares
+Depois os Ímpares
 
- Você deve exibir os pares em ordem crescente e na sequência
+Você deve exibir os pares em ordem crescente e na sequência
 os ímpares em ordem decrescente.
 ---
 Entrada:
