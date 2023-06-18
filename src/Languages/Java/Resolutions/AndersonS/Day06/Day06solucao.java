@@ -5,7 +5,6 @@ import java.util.*;
 public class Day06solucao {
 
     private static int numeroDePalavrasParaConcatenar = 2;
-    private static ArrayList<String> combinacoesFinais = new ArrayList<>();
     private static Scanner input = new Scanner(System.in);
 
     public static int contarNumeroDeLetrasTotais(ArrayList<String> palavras){
@@ -17,7 +16,9 @@ public class Day06solucao {
         return soma;
     }
 
-    public static void concatenarPalavras(int numeroDePalavrasParaConcatenar, ArrayList<String> palavras){
+    public static ArrayList<String> concatenarPalavras(int numeroDePalavrasParaConcatenar, ArrayList<String> palavras){
+
+        ArrayList<String> combinacoesFinais = new ArrayList<>();
 
         ArrayList<String> palavrasParaConcatenar;
 
@@ -51,7 +52,7 @@ public class Day06solucao {
             }
             combinacoesFinais.add(stringBuilder.toString());
         }
-
+        return combinacoesFinais;
     }
 
     public static ArrayList<String> tornarEmArrayListString(String[] vetorString){
@@ -123,7 +124,7 @@ public class Day06solucao {
 
         ArrayList<String> palavrasParaConcatenar = recebePalavras(numeroDeCombinacoes);
 
-        concatenarPalavras(numeroDePalavrasParaConcatenar, palavrasParaConcatenar);
+        ArrayList<String> combinacoesFinais = concatenarPalavras(numeroDePalavrasParaConcatenar, palavrasParaConcatenar);
 
         combinacoesFinais.forEach(palavraConcatenada -> System.out.println("Combinação número: "+ (combinacoesFinais.indexOf(palavraConcatenada)+1)+"\n"+palavraConcatenada));
 
