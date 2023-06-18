@@ -3,16 +3,21 @@
 
  Desafio:
  
-Dada uma lista de números inteiros, onde todos os elementos ocorrem duas vezes, 
-exceto por um elemento que ocorre apenas uma vez, escreva um programa em Java
+Dada uma lista de números inteiros, onde todos 
+os elementos ocorrem duas vezes, 
+exceto por um elemento que ocorre apenas uma vez,
+escreva um programa em Java
 para encontrar esse elemento único.
 
 ---
 
 Entrada:
 
-A entrada consiste em uma lista de números inteiros separados por espaços.
-A lista terá pelo menos um elemento e no máximo 10^6 elementos. Os números na lista estarão no intervalo de -10^9 a 10^9.
+A entrada consiste em uma lista de números 
+inteiros separados por espaços.
+A lista terá pelo menos um elemento e no
+máximo 100 elementos. Os números na lista 
+estarão no intervalo de -1000 a 1000.
 
 ---
 
