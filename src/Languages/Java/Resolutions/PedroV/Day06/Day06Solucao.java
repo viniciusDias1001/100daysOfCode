@@ -7,11 +7,8 @@ import java.util.Scanner;
 
 public class Day06Solucao {
     public Integer quantDeJuncoes = 0;
-
     public List<String> palavrasCombinadas = new ArrayList<>();
-
     public char[] chars;
-
     public List<String> palvraFinal = new ArrayList<>();
 
 

@@ -49,3 +49,24 @@ Saída:
 
  Para cada caso de teste, deve-se apresentar a mensagem Vencedor(a): xxxxxx, com um espaço
  após o sinal ":" indicando qual é o aluno do grupo que venceu a brincadeira.
+
+---
+
+Exemplo de entrada:
+
+Indique a quantidade de aluno | limite:100
+5
+Nome e a ficha do aluno 1 separados por um espaço
+Lucas 45
+Nome e a ficha do aluno 2 separados por um espaço
+gabriel 12
+Nome e a ficha do aluno 3 separados por um espaço
+Marcos 76
+Nome e a ficha do aluno 4 separados por um espaço
+Ana 3
+Nome e a ficha do aluno 5 separados por um espaço
+Pedro 8
+
+Exemplo de saida:
+
+Vencedor: Lucas 

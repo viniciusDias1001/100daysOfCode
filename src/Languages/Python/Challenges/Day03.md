@@ -29,3 +29,18 @@ Saída:
 Para cada caso de entrada deverão ser impressas as informações ordenadas pela
 cor em ordem ascendente, seguido pelos tamanhos em ordem descendente e por último
 por ordem ascendente de nome, conforme o exemplo abaixo.
+
+
+
+Exemplo de Entrada:
+
+Quantos uniformes: 1
+Nome do aluno: Maria
+Cor: Vermelho
+Tamanho: P
+
+exemplo saida:
+
+Maria
+Vermelho P
+

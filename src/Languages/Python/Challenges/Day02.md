@@ -30,3 +30,25 @@ Saída:
 
  A saída contém N linhas, cada uma representando uma lista de compra,
  sem os itens repetidos e em ordem alfabética.
+
+---
+
+Exemplo de entrada:
+
+Digite Numero de listas de compras de 1 a 100
+
+2
+
+Digite a lista de compras separadas por espaço e com caracters menores que 20
+
+banana banana melancia
+
+Digite a lista de compras separadas por espaço e com caracters menores que 20
+
+manga morango cerveja morango
+
+exemplo de saida:
+
+[banana, melancia]
+
+[cerveja, manga, morango]
