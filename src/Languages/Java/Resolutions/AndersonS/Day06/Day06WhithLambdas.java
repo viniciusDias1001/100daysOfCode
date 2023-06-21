@@ -107,7 +107,6 @@ public class Day06WhithLambdas {
 
             for (int t=0; t<numeroDeLetras;t++){
 
-
                 for(int j= 0; j<palavrasParaConcatenar.size(); j++){
 
                     if(palavrasParaConcatenar.get(j).length()>t){
