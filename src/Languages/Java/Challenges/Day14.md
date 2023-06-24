@@ -21,6 +21,7 @@ No programa principal, demonstre o uso do gerador de CPF, gerando um CPF válido
 Exemplo de entrada:
 
 Quantos cpf quer gerar ?
+
 1
 
 
@@ -29,7 +30,10 @@ Quantos cpf quer gerar ?
 Exemplo de saída:
 
 CPF gerado: 123.456.789-09
+
 O CPF gerado é válido? Sim
+
+---
 
 Neste exemplo, um CPF foi gerado aleatoriamente (123.456.789-09) e em seguida foi validado, 
 confirmando que o CPF gerado é válido.
