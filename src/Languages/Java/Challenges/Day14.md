@@ -1,6 +1,5 @@
 
 # Gerador de CPF
-
 Desafio:
 Implemente um gerador de CPF em Java. O CPF (Cadastro de Pessoas Físicas) é um número de identificação individual atribuído a cada cidadão brasileiro. O CPF é composto por 11 dígitos, sendo que os dois últimos dígitos são chamados de dígitos verificadores.
 
