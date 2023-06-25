@@ -1,4 +1,5 @@
 # Cifra de César
+
 Desafio:
 
 A Cifra de César é um tipo de criptografia por substituição, onde cada letra do texto original é substituída 
@@ -24,13 +25,23 @@ Imprima a string original descriptografada.
 
 Exemplo de entrada:
 
-JXHULQWHJUDWXP
+defghijklmnopqrstuvwxyzabc
 
 Exemplo de saída:
 
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-GUESLANGUAGEM
 
-Neste exemplo, a string criptografada é "JXHULQWHJUDWXP". Através da Cifra de César, 
+Neste exemplo, a string criptografada é "defghijklmnopqrstuvwxyzabc". Através da Cifra de César, 
 sabemos que cada letra foi deslocada 3 posições para frente no alfabeto para obter a string criptografada.
-Portanto, ao desfazer o deslocamento, a string original é "GUESLANGUAGEM".
+Portanto, ao desfazer o deslocamento, a string original é "ABCDEFGHIJKLMNOPQRSTUVWXYZ".
+
+Dica:
+
+Char ch = 65;
+System.out.println(ch);
+
+SAIDA:
+
+Z
+
