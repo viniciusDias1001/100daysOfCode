@@ -1,4 +1,3 @@
-
 # Abreviando Posts do Blog
 
 Desafio:
@@ -17,8 +16,8 @@ escolher uma palavra que inicia com tal letra e que aparece no post. Uma vez esc
 sempre que ela aparecer no post, ela será substituída por sua letra inicial e um ponto, diminuindo
 assim o número de caracteres impressos na tela.
 
-Por exemplo, na frase: “hoje eu programei em Java”, podemos escolher a palavra “programei”
-para representar a letra ‘p', e a frase ficará assim: “hoje eu p. em Java”, economizando assim
+Por exemplo, na frase: “hoje eu programei em Python”, podemos escolher a palavra “programei”
+para representar a letra ‘p', e a frase ficará assim: “hoje eu p. em Python”, economizando assim
 sete caracteres. Uma mesma palavra pode aparecer mais de uma vez no texto, e será abreviada todas
 as vezes. Note que, se após uma abreviação o número de caracteres não diminuir, ela não deve ser
 usada, tal como no caso da palavra “eu” acima.
@@ -66,3 +65,4 @@ a. = adoro
 c. = céu
 e. = estrelado
 j. = jantar
+
