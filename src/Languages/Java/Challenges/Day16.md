@@ -1,48 +1,66 @@
+# Criptografia por Substituição Aleatória
 
-# Criptografia Twofish - Criptografar e Descriptografar
 
-Desafio: 
+Desafio:
 
-O Twofish é um algoritmo de criptografia simétrica forte que opera com blocos de dados. Neste desafio, 
-você deverá implementar um programa que seja capaz de criptografar e descriptografar uma mensagem utilizando o algoritmo Twofish.
+Você deve implementar um algoritmo de criptografia por substituição em que a chave de substituição é gerada aleatoriamente.
+O algoritmo deve ser capaz de criptografar e descriptografar mensagens usando a chave de substituição gerada.
 
 ---
 
 Entrada:
 
-A entrada consiste em três linhas:
-
-A primeira linha contém a opção "C" ou "D", indicando se a operação é de criptografia (C) ou descriptografia (D).
-A segunda linha contém a mensagem a ser processada, composta apenas por caracteres alfanuméricos e espaços.
-A terceira linha contém a chave de criptografia, composta apenas por caracteres alfanuméricos.
+Escolha: Criptografar ou Descriptografar
+Mensagem: Uma string contendo a mensagem a ser processada
 
 ---
 
 Saída:
 
-O programa deve imprimir a mensagem processada de acordo com a operação escolhida:
+Se a escolha for "Criptografar":
+Mensagem Criptografada: A mensagem criptografada resultante da substituição aleatória
+Chave de Substituição: A chave de substituição gerada aleatoriamente
 
-Se a opção for "C" (criptografia), deve ser impressa a mensagem criptografada.
-Se a opção for "D" (descriptografia), deve ser impressa a mensagem descriptografada.
+
+Se a escolha for "Descriptografar":
+Mensagem Descriptografada: A mensagem original resultante da descriptografia usando a chave de substituição fornecida
+
 
 ---
 
+Explicação:
 
-Exemplo de Entrada:
-C
+Para criptografar a mensagem, você deve gerar aleatoriamente uma chave de substituição, 
+que mapeia cada letra do alfabeto para uma outra letra aleatória. Em seguida, substitua cada letra da mensagem 
+pela letra correspondente na chave de substituição gerada.
+Para descriptografar a mensagem, use a mesma chave de substituição fornecida. Realize a substituição inversa, 
+ou seja, substitua cada letra da mensagem criptografada pela letra correspondente na chave de substituição.
+Dessa forma, a chave de substituição será gerada aleatoriamente em cada execução do programa, tornando o processo de criptografia mais seguro.
+
+
+Entrada:
+
+Escolha: Criptografar
+
 Mensagem: "Hello, World!"
-Chave de Criptografia: "SecretKey123"
 
-Exemplo de Saída:
-Mensagem Criptografada: "FJ94Xm3R56HVwa8lB/KIEw=="
+Saída:
+Mensagem Criptografada: "Jvuuf, Yqtnf!"
 
-Exemplo de Entrada:
-D
-Mensagem Criptografada: "FJ94Xm3R56HVwa8lB/KIEw=="
-Chave de Criptografia: "SecretKey123"
+Chave de Substituição: {'H': 'J', 'e': 'v', 'l': 'u', 'o': 'f', ',': ',', ' ': ' ', 'W': 'Y', 'r': 'q', 'd': 't', '!': 'n'}
 
-Exemplo de Saída:
+---
 
-Mensagem Descriptografada: "Hello, World!"
+Explicação:
 
-Neste exemplo, o programa deve ser capaz de criptografar a mensagem "Hello, World!" utilizando a chave "SecretKey123" e produzir a mensagem criptografada "FJ94Xm3R56HVwa8lB/KIEw==". Além disso, o programa deve ser capaz de descriptografar a mensagem criptografada de volta para a mensagem original.
+Neste exemplo, a mensagem "Hello, World!" foi criptografada usando uma chave de substituição aleatória gerada.
+Cada letra da mensagem foi substituída pela letra correspondente na chave de substituição.
+A chave de substituição foi gerada aleatoriamente e mapeia cada letra do alfabeto para outra letra.
+A mensagem criptografada resultante foi "Jvuuf, Yqtnf!" e a chave de substituição utilizada
+foi {'H': 'J', 'e': 'v', 'l': 'u', 'o': 'f', ',': ',', ' ': ' ', 'W': 'Y', 'r': 'q', 'd': 't', '!': 'n'}.
+
+Na etapa de descriptografia, se a escolha fosse "Descriptografar" e a chave de substituição fornecida fosse
+{'H': 'J', 'e': 'v', 'l': 'u', 'o': 'f', ',': ',', ' ': ' ', 'W': 'Y', 'r': 'q', 'd': 't', '!': 'n'}, 
+a mensagem criptografada "Jvuuf, Yqtnf!" seria descriptografada para a mensagem original "Hello, World!".
+
+Lembrando que a chave de substituição será gerada aleatoriamente em cada execução do programa, resultando em mensagens criptografadas diferentes a cada vez.
