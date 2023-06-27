@@ -12,16 +12,16 @@ public class Day16Solucao {
         private int VALOR_INICIAL_DO_ALFABETO_MAX = 65;
 
         public Criptografador(){
-            gerarAlfabetoTotalArrayList();
+            gerarAlfabeto();
         }
-        private String imprimirFraseCriptografada(List<Integer> chaves , Map<Integer,String> alfabeto){
+        protected String imprimirFraseCriptografada(List<Integer> chaves , Map<Integer,String> alfabeto){
             StringBuilder str  = new StringBuilder();
             for (int i  = 0; i < chaves.size(); i++){
                str.append(alfabeto.get(chaves.get(i)));
             }
             return str.toString();
         }
-        private List<Integer> gerarChavesDaStringRecebida(String fraseOriginal){
+        protected List<Integer> gerarChavesDaStringRecebida(String fraseOriginal){
             List<Integer> listaChaves = new ArrayList<>();
             String[] listaDeLetras = tranformarStringEmList(fraseOriginal);
             for (int i = 0; i < listaDeLetras.length; i++) {
@@ -33,7 +33,7 @@ public class Day16Solucao {
             }
             return listaChaves;
         }
-        private Map<Integer,String> gerarChaveSubstituicao() {
+        protected Map<Integer,String> gerarChaveSubstituicao() {
             Map<Integer,String> chaveSubstituicao = new HashMap();
             Integer contLetras = VALOR_INICIAL_DO_ALFABETO_MAX;
             List<Integer>  listafeita = gerarListaDeNumeroAleatorio();
@@ -46,14 +46,14 @@ public class Day16Solucao {
 
             return chaveSubstituicao;
         }
-        private String[] tranformarStringEmList(String palavras){
+        protected String[] tranformarStringEmList(String palavras){
             String[] listaDeletras = new String[palavras.length()];
             for (int i = 0; i < palavras.length(); i++) {
                 listaDeletras[i] = String.valueOf(palavras.charAt(i));
             }
             return listaDeletras;
         }
-        private void gerarAlfabetoTotalArrayList() {
+        private void gerarAlfabeto() {
             Integer contLetras = VALOR_INICIAL_DO_ALFABETO_MAX;
             Map<Character, Boolean> caracteresAdicionados = new HashMap<>();
             for (char ch = 'A'; ch <= 'z'; ch++) {
@@ -131,9 +131,7 @@ public class Day16Solucao {
             String mensagemCriptografada = imprimirFraseCriptografada(chaves,alfabetoSubstituicao);
 
             System.out.println("\n" + "Mensagem Criptografada:" + mensagemCriptografada + "\n");
-
             System.out.println("Chave de Substituição: " + refatorarMap(alfabetoSubstituicao) + "\n");
-
             System.out.println("Sua chave para Decodificação: " + chavesDeSubstituição.size() + "\n");
 
         }
