@@ -29,7 +29,6 @@ public class Day01Solucao {
     }
 
     public List<Integer> responseAndListOfOut(){
-
         return  sortfullList();
     }
 

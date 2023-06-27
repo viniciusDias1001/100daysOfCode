@@ -7,10 +7,7 @@ public class Day07Solucao {
     private List<String[]> listaEntradaLetras = new ArrayList<>();
     private Integer quntidadeDeCasos = 0;
     private Map<String, Integer> valorDeLetras = new HashMap<>(26);
-
     private List<Integer> somaFinal = new ArrayList<>();
-
-
     String[] alfabeto = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
 
     private void darValorAletras(){
@@ -39,7 +36,6 @@ public class Day07Solucao {
             entrada.next();
         }
     }
-
     public void receberLetras(){
         Scanner entrada = new Scanner(System.in);
         for (int i = 0; i < quntidadeDeCasos; i++){
@@ -56,7 +52,6 @@ public class Day07Solucao {
         }
 
     }
-
     public void hash() {
         String[] primeiraArray = listaEntradaLetras.get(0);
         for (int j = 0; j < this.listaEntradaLetras.size(); j++){
@@ -64,21 +59,17 @@ public class Day07Solucao {
                 String[] primeiraArray2 = listaEntradaLetras.get(j);
                 Integer posicaoAlfabeto = this.valorDeLetras.get(primeiraArray2[i]);
                 this.somaFinal.add(posicaoAlfabeto);
-
                 Integer elementoEntrada = listaEntradaLetras.indexOf(primeiraArray2);
                 this.somaFinal.add(elementoEntrada);
                     this.somaFinal.add(i);
             }
         }
     }
-
-
     public void somarValoresDeLista(){
         Integer soma = this.somaFinal.stream().mapToInt(Integer::intValue).sum();
         System.out.println("O cálculo final de hash será:  " + soma);
 
     }
-
     public void run(){
         darValorAletras();
         receberQuantidadeDeCasos();
@@ -86,7 +77,6 @@ public class Day07Solucao {
         hash();
         somarValoresDeLista();
     }
-
     public static void main(String[] args) {
         Day07Solucao day07Solucao = new Day07Solucao();
         day07Solucao.run();

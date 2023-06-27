@@ -35,4 +35,4 @@ Exemplo de saída:
 
 8
 
-Neste exemplo, o programa deve contar 9 palavras na frase fornecida.
+Neste exemplo, o programa deve contar 8 palavras na frase fornecida.

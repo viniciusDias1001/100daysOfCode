@@ -16,13 +16,15 @@ dado número é perfeito ou não.
 Entrada:
 
 A entrada consiste de uma única linha contendo um número inteiro positivo
-N (1 <= N <= 10^6).
+N (1 <= N <= 100).
 
 ---
 
 Saída:
 
 Imprima "SIM" se o número for perfeito e "NAO" caso contrário.
+
+---
 
 Exemplo de entrada:
 

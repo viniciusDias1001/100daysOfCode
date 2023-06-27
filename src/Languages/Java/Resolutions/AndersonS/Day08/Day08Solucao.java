@@ -1,35 +1,70 @@
 package src.Languages.Java.Resolutions.AndersonS.Day08;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
+import java.util.function.UnaryOperator;
 
 public class Day08Solucao {
 
-    static class notEnhoughWordSize extends RuntimeException{
-        public notEnhoughWordSize() {
-            super("the word's size isn't enought");
+    static class AbrevietionRules{
+
+        private  String abrevietionSymbol;
+        private  String abrevietionFormat;
+        private  UnaryOperator<String> abrevieteFunction;
+        private int minimumWordSize;
+
+        public AbrevietionRules(String abrevietionSymbol, String abrevietionFormat,int minimumWordSize, UnaryOperator<String> abrevieteFunction) {
+            this.abrevietionSymbol = abrevietionSymbol;
+            this.abrevietionFormat = abrevietionFormat;
+            this.abrevieteFunction = abrevieteFunction;
+            this.minimumWordSize = minimumWordSize;
+        }
+
+        public String getAbrevietionSymbol() {
+            return abrevietionSymbol;
+        }
+
+        public void setAbrevietionSymbol(String abrevietionSymbol) {
+            this.abrevietionSymbol = abrevietionSymbol;
+        }
+
+        public String getAbrevietionFormat() {
+            return abrevietionFormat;
+        }
+
+        public void setAbrevietionFormat(String abrevietionFormat) {
+            this.abrevietionFormat = abrevietionFormat;
+        }
+
+        public int getMinimumWordSize() {
+            return minimumWordSize;
+        }
+
+        public void setMinimumWordSize(int minimumWordSize) {
+            this.minimumWordSize = minimumWordSize;
+        }
+
+        public UnaryOperator<String> getAbrevieteFunction() {
+            return abrevieteFunction;
+        }
+
+        public void setAbrevieteFunction(UnaryOperator<String> abrevieteFunction) {
+            this.abrevieteFunction = abrevieteFunction;
         }
     }
+    static class Abrevietion implements Comparable<Abrevietion> {
 
-    static class Abrivietion {
-
-        public static final ArrayList<Abrivietion> allAbrivietions = new ArrayList<>();
-
-        static final int MINIMUM_ABREVIETEBLE_WORD_SIZE = 3;
-
-        static final String ABREVIETION_SYMBOL  = ".";
-
-        static final String ABREVIETION_FORMAT = "%s" + ABREVIETION_SYMBOL;
-
+        private static final ArrayList<Abrevietion> ALL_ABREVIETIONS = new ArrayList<>();
+        private AbrevietionRules abrevietionRules;
         private String word;
-
         private String abrevietion;
-        
-        public Abrivietion(String word) {
+        private boolean wereAbrevieted;
+
+        public Abrevietion(String word, AbrevietionRules abrevietionRules) {
             this.word = word;
-            abrevieteWord();
-            appendAllAbrivietions();
+            this.abrevietionRules = abrevietionRules;
+            this.abrevietion = abrevieteWord();
+            this.wereAbrevieted = isWordAbrevieteble();
+            appendToAllAbrivietions(this);
         }
 
         public String getWord() {
@@ -38,101 +73,146 @@ public class Day08Solucao {
 
         public void setWord(String word) {
             this.word = word;
+            this.abrevietion = abrevieteWord();
+            this.wereAbrevieted = isWordAbrevieteble();
         }
 
         public String getAbrevietion() {
             return abrevietion;
         }
 
-        public static boolean isWordAbrevieted(String word){
-            return allAbrivietions.stream().filter(abrivietion -> abrivietion.getWord().length()>=MINIMUM_ABREVIETEBLE_WORD_SIZE).toList().contains(word);
+        public boolean wereAbrevieted() {
+            return wereAbrevieted;
         }
 
-        public static boolean isWordAbrevieteble(String word){
-
-            return  word.length() >= MINIMUM_ABREVIETEBLE_WORD_SIZE;
+        private boolean isWordAbrevieteble(){
+            if(isWordAbrevieted(this.word)) return true;
+            if(isThisWordAbrevietionEqualsAnotherAbrevietion(this.word)) return false;
+            if(isWordAdequate()) return true;
+            return false;
         }
 
-        public void abrevieteWord(){
-            this.abrevietion = abrevieteWord(this.word);
+        private boolean isWordAdequate(){
+            if(word.length() >= abrevietionRules.getMinimumWordSize() && !isWordAbrevieted(word)) return true;
+            return false;
         }
 
-        public static String abrevieteWord(String word){
+        public String abrevieteWord(){
 
-            if(isWordAbrevieteble(word)){
-                return abrevieteAlgorithm(word);
-            }
-            throw new notEnhoughWordSize();
+            if(isWordAbrevieteble()) return abrevietionRules.getAbrevieteFunction().apply(this.word);
+            return word;
         }
 
-        public static String abrevieteAlgorithm(String word){
-
-            String firstLetter = String.valueOf(word.charAt(0));
-
-            return String.format(ABREVIETION_FORMAT, firstLetter);
+        private boolean isThisWordAbrevietionEqualsAnotherAbrevietion(String word){
+            if(getAbrevitionsEqualsThisAbrevietionWord(word).size() > 0) return true;
+            return false;
         }
 
-        public static ArrayList<Abrivietion> abrevieteWords(ArrayList<String> words){
-
-            ArrayList<Abrivietion> abrivietions = new ArrayList<>();
-
-            words.forEach(word -> abrivietions.add(new Abrivietion(word)));
-
-            return abrivietions;
+        private ArrayList<Abrevietion> getAbrevitionsEqualsThisAbrevietionWord(String word){
+            return new ArrayList<>(ALL_ABREVIETIONS.stream().filter(Abrevietion::wereAbrevieted).filter(abrevietion -> abrevietion.getAbrevietion().equalsIgnoreCase(abrevietionRules.getAbrevieteFunction().apply(word))).toList());
         }
 
-        private void appendAllAbrivietions(){
-            allAbrivietions.add(this);
+        private ArrayList<Abrevietion> getAbrevietionWithThisWord(String word){
+            return new ArrayList<>(ALL_ABREVIETIONS.stream().filter(Abrevietion::wereAbrevieted).filter(abrevietion -> abrevietion.getWord().equalsIgnoreCase(word)).toList());
+        }
+
+        private boolean isWordAbrevieted(String word){
+            if(getAbrevietionWithThisWord(word).size() > 0) return true;
+            return false;
+        }
+
+        public static ArrayList<Abrevietion> getAllAbrevietions(){
+            return ALL_ABREVIETIONS;
+        }
+
+        private void appendToAllAbrivietions(Abrevietion abrevietion){
+            if (wereAbrevieted() && !ALL_ABREVIETIONS.contains(this)) ALL_ABREVIETIONS.add(abrevietion);
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Abrevietion that = (Abrevietion) o;
+            return wereAbrevieted == that.wereAbrevieted && Objects.equals(word, that.word) && Objects.equals(abrevietion, that.abrevietion);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(word, abrevietion, wereAbrevieted);
         }
 
         @Override
         public String toString(){
             return abrevietion + " = " + word;
         }
+
+        @Override
+        public int compareTo(Abrevietion abrevietion) {
+            return this.word.compareTo(abrevietion.getAbrevietion());
+        }
+    }
+
+    static class AbrevietedPhrase{
+
+        private Phrase phrase;
+        private AbrevietionRules abrevietionRules;
+        private String abrevietedPhraseString;
+        private ArrayList<Abrevietion> abrevietedWords;
+
+        public AbrevietedPhrase(Phrase phrase, AbrevietionRules abrevietionRules) {
+            this.phrase = phrase;
+            this.abrevietionRules = abrevietionRules;
+            this.abrevietedWords = genereteAbrevietedWords();
+            this.abrevietedPhraseString = genereteAbrevietedPhrase();
+        }
+
+        public String getAbrevietedPhraseString() {
+            return abrevietedPhraseString;
+        }
+
+        private String genereteAbrevietedPhrase(){
+            StringBuilder stringBuilder = new StringBuilder();
+            abrevietedWords.forEach(abrevietion -> stringBuilder.append(abrevietion.getAbrevietion() + " "));
+            return stringBuilder.toString();
+        }
+
+        private ArrayList<Abrevietion> genereteAbrevietedWords(){
+            ArrayList<Abrevietion> abrevietedWords = new ArrayList<>();
+            phrase.getWords().forEach(word -> abrevietedWords.add(new Abrevietion(word, abrevietionRules)));
+            return abrevietedWords;
+        }
     }
 
     static class Phrase{
 
-        private String phrase;
-
+        private String phraseString;
         private ArrayList<String> words;
 
-        private ArrayList<Abrivietion> abrevietedWords;
-
-        public Phrase(String phrase) {
-            this.phrase = phrase;
-            phraseToWords();
-            this.abrevietedWords = Abrivietion.abrevieteWords(words);
+        public Phrase(String phraseString) {
+            this.phraseString = phraseString;
+            this.words = phrseToWords(this.phraseString);
         }
 
-        public String getPhrase() {
-            return phrase;
+        public String getPhraseString() {
+            return phraseString;
         }
 
-        public void setPhrase(String phrase) {
-            this.phrase = phrase;
-            phraseToWords();
-            this.abrevietedWords = Abrivietion.abrevieteWords(words);
+        public void setPhraseString(String phraseString) {
+            this.phraseString = phraseString;
+            this.words = phrseToWords(this.phraseString);
         }
 
         public ArrayList<String> getWords() {
             return words;
         }
 
-        public void phraseToWords(){
-
-            this.words = phrseToWords(this.phrase);
-
-        }
-
         public static ArrayList<String> phrseToWords(String phrase){
-
             return new ArrayList<>(Arrays.asList(phrase.split(" ")));
-
         }
     }
 
-    private static Scanner input = new Scanner(System.in);
+    private static final Scanner input = new Scanner(System.in);
 
     public static String inputString(){
         return input.nextLine();
@@ -140,22 +220,32 @@ public class Day08Solucao {
 
     public static void run(){
 
-        String phraseWithEspace;
+        AbrevietionRules abrevietionRules;
+        String abrevietionSymbol = ".";
+        String abrevietionFormat = "%s" + abrevietionSymbol;
+        int minimunWordSize = 3;
+        UnaryOperator<String> abrevietionFunction = word -> String.format(abrevietionFormat, word.charAt(0));
 
+        abrevietionRules = new AbrevietionRules(abrevietionSymbol,abrevietionFormat, minimunWordSize, abrevietionFunction);
+
+        ArrayList<AbrevietedPhrase> userAbrevietedPhrases = new ArrayList<>();
+        Phrase userPhrase;
+        String stopSymbol = ".";
         System.out.println("Write some Posts! \".\" alone in a line indicates the end");
-
         do{
-            phraseWithEspace = inputString();
+            userPhrase = new Phrase(inputString());
+            userAbrevietedPhrases.add(new AbrevietedPhrase(userPhrase,abrevietionRules));
+        }while(!userPhrase.getPhraseString().equals(stopSymbol));
 
-            try{
-                Phrase phrase = new Phrase(phraseWithEspace);
-            }catch (notEnhoughWordSize e){
-                //
-            }
+        //removing the last phrase becouse "." is not a phrase
+        userAbrevietedPhrases.remove(userAbrevietedPhrases.size()-1);
 
-        }while(!phraseWithEspace.equalsIgnoreCase("."));
+        System.out.println("All posts:");
+        userAbrevietedPhrases.forEach(abrevietedPhrase -> System.out.println(abrevietedPhrase.getAbrevietedPhraseString()));
 
-        System.out.println(Abrivietion.allAbrivietions);
+        System.out.println("\nThe meaning of each symbol:");
+        Collections.sort(Abrevietion.getAllAbrevietions() );
+        Abrevietion.getAllAbrevietions().forEach(System.out::println);
 
     }
 

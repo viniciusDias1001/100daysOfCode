@@ -8,8 +8,4 @@ import java.util.Arrays;
 
 public class Day08Teste {
 
-    int testingNumber = 10;
-
-    String phraseTest = "hello world";
-
 }
