@@ -4,7 +4,6 @@ public class SomaMaxMin {
 
     public static Integer[] lista = {1,2,3,4,5};
 
-
     public static void somaMaxMin(){
 
         int max = lista[0];
@@ -12,10 +11,8 @@ public class SomaMaxMin {
         int min = lista[0];
             for (int i = 0; i < lista.length; i++){
                 soma += lista[i];
-
                 if (min > lista[i])
                     min = lista[i];
-
                 if (max < lista[i])
                     max = lista[i];
             }

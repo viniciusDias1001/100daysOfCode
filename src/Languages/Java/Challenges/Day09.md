@@ -43,7 +43,7 @@ Exemplo de entrada:
 
 2 2 2
 
-0 1 1
+1 1 1
 
 6
 
@@ -72,7 +72,7 @@ Explicação:
 
 No primeiro caso de teste, temos três pilhas com cartas de valores (1, 1, 1), (2, 2, 2) e (0, 1, 1).
 O jogador pode remover as cartas (1, 2) das duas primeiras pilhas, pois a soma desses valores é 3 (múltiplo de 3), 
-deixando apenas a carta (0, 1, 1) na última pilha, que também pode ser removida. Portanto, o jogador pode ganhar o jogo.
+deixando apenas a carta (1, 1, 1) na última pilha, que também pode ser removida. Portanto, o jogador pode ganhar o jogo.
 No segundo caso de teste, temos seis pilhas com cartas de valores 
 (0, 0, 0), (0, 0, 1), (0, 0, 2), (0, 0, 3), (0, 0, 4) e (0, 0, 5). 
 Não é possível remover nenhuma combinação de cartas que resulte em uma soma múltipla de 3. Portanto, 

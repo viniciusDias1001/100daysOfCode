@@ -69,5 +69,15 @@ public class MetodosUteis {
         return textoprincipal.concat(textoAdicional);
     }
 
+    public String[] tranformarStringEmList(String palavras){
+        String[] listaDeletras = new String[palavras.length()];
+        for (int i = 0; i < palavras.length(); i++) {
+            listaDeletras[i] = String.valueOf(palavras.charAt(i));
+        }
+        return listaDeletras;
+    }
+
+
+
 
 }
