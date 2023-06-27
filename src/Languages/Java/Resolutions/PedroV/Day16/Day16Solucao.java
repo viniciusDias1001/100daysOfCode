@@ -15,7 +15,7 @@ public class Day16Solucao {
             gerarAlfabetoTotalArrayList();
         }
         private String imprimirFraseCriptografada(List<Integer> chaves , Map<Integer,String> alfabeto){
-            StringBuilder str  =new StringBuilder();
+            StringBuilder str  = new StringBuilder();
             for (int i  = 0; i < chaves.size(); i++){
                str.append(alfabeto.get(chaves.get(i)));
             }
