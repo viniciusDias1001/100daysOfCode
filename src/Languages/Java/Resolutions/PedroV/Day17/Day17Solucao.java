@@ -33,15 +33,11 @@ public class Day17Solucao {
        private Integer quantidadeDiscos;
        private int cont = 0;
 
-
-
-
        public TorreDeHanoi(){
            this.primeiraTorre = new LinkedList();
            this.segundaTorre = new LinkedList();
            this.terceiraTorre = new LinkedList();
        }
-
 
        protected String obterNomeTorre(Deque<Disco> torre) {
            if (torre == primeiraTorre) {
@@ -53,7 +49,6 @@ public class Day17Solucao {
            }
            return "";
        }
-
 
        protected void receberQuantidadeDeDiscos() {
            Scanner entrada = new Scanner(System.in);
@@ -100,7 +95,6 @@ public class Day17Solucao {
            }
        }
 
-
        protected void saida(){
            System.out.println("\n");
            System.out.println("Torre 1");
@@ -112,7 +106,6 @@ public class Day17Solucao {
            System.out.println("Torre 3");
            terceiraTorre.forEach(System.out::println);
        }
-
        protected void jogo(){
            receberQuantidadeDeDiscos();
            addDiscosNaTorre(adicionarTamanhoDosDiscos());
@@ -129,7 +122,5 @@ public class Day17Solucao {
 
 
     }
-
-
 
 }
