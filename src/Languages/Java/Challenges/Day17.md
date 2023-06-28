@@ -10,11 +10,19 @@ Apenas um disco pode ser movido de cada vez.
 Um disco maior nunca pode ficar em cima de um disco menor.
 Seu algoritmo deve receber como entrada o número de discos na primeira pilha e imprimir os passos necessários para mover todos os discos para a terceira pilha.
 
+---
+
 Entrada:
+
 Número de discos na primeira pilha (um número inteiro positivo)
 
+---
+
 Saída:
+
 Os passos necessários para resolver a Torre de Hanoi, indicando a movimentação de cada disco de uma pilha para outra.
+
+---
 
 Explicação:
 

@@ -56,7 +56,7 @@ public class Day17Solucao {
                try {
                    System.out.println("Quantos Discos deseja Adicionar ?");
                    Integer numeroValido = entrada.nextInt();
-                   if (numeroValido > 0 && numeroValido < 10){
+                   if (numeroValido > 0 && numeroValido < 100){
                       this.quantidadeDiscos = numeroValido;
                       break;
                    } else
@@ -115,10 +115,9 @@ public class Day17Solucao {
        }
    }
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
        TorreDeHanoi torreDeHanoi = new TorreDeHanoi();
        torreDeHanoi.jogo();
-
 
 
     }
