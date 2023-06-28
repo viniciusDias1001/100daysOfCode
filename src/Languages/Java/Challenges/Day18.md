@@ -24,4 +24,4 @@ Saida:
 
 No pior caso: 6.095.689.385.410.816
 
-Tempo de execução: 60.000 segundos
+Tempo de execução: 600.000 segundos
