@@ -3,7 +3,7 @@ import src.Languages.Java.Resolutions.PedroV.Uteis.MetodosUteis;
 import java.util.*;
 
 public class Day16Solucao {
-    public static List<Map<Integer,String>> chavesDeSubstituição = new ArrayList<>();
+    public static List<Map<Integer,String>> chavesDeSubstituicao = new ArrayList<>();
     public static class Criptografador  {
         private Map<Integer,String> alfabetoComCaracter = new HashMap<>();
         private MetodosUteis uteis = new MetodosUteis();
@@ -42,7 +42,7 @@ public class Day16Solucao {
                 chaveSubstituicao.put(contLetras,this.alfabetoComCaracter.get(listafeita.get(i)));
                 contLetras++;
             }
-            chavesDeSubstituição.add(chaveSubstituicao);
+            chavesDeSubstituicao.add(chaveSubstituicao);
 
             return chaveSubstituicao;
         }
@@ -132,11 +132,11 @@ public class Day16Solucao {
 
             System.out.println("\n" + "Mensagem Criptografada:" + mensagemCriptografada + "\n");
             System.out.println("Chave de Substituição: " + refatorarMap(alfabetoSubstituicao) + "\n");
-            System.out.println("Sua chave para Decodificação: " + chavesDeSubstituição.size() + "\n");
+            System.out.println("Sua chave para Decodificação: " + chavesDeSubstituicao.size() + "\n");
 
         }
         public List<Map<Integer, String>> getChavesDeSubstituição() {
-            return chavesDeSubstituição;
+            return chavesDeSubstituicao;
         }
         public Map<Integer, String> getAlfabetoComCaracter() {
             return alfabetoComCaracter;
@@ -181,8 +181,9 @@ public class Day16Solucao {
                 }
             }
         }
-        private void buscarAlfabeto(){
-            this.alfabetoAleatorio.putAll(codificador.getChavesDeSubstituição().get(this.indexChaveSubstituicao - 1));
+        private void buscarAlfabeto() {
+                this.alfabetoAleatorio.putAll(codificador.getChavesDeSubstituição().get(this.indexChaveSubstituicao - 1));
+                System.out.println("Chave inexistente!");
 
         }
         private List<Integer> gerarChaves(){
@@ -238,8 +239,6 @@ public class Day16Solucao {
         public void menu(){
             Scanner entrada = new Scanner(System.in);
             Boolean pegando = false;
-
-
                 while (!pegando){
                     try {
                         options();
@@ -264,7 +263,6 @@ public class Day16Solucao {
                     }catch (InputMismatchException e){
                         System.out.println("Digite Apenas uma das opções !!");
                         entrada.next();
-
                     }
                 }
 
