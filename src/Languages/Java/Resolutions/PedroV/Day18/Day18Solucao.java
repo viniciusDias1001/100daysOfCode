@@ -8,11 +8,8 @@ import java.util.stream.Stream;
 
 
 public class Day18Solucao {
-    private String senhaDesajada = "#Yu4P";
-    private String possibilidade;
+    private String senhaDesajada = "#Pyj8";
     private Integer tentativa = 0;
-
-
 
     protected void decodificarSenha(int numThreads) {
         AtomicLong tempoInicial = new AtomicLong(System.currentTimeMillis());
@@ -34,8 +31,6 @@ public class Day18Solucao {
                 .takeWhile(possibilidade -> !senhaEncontrada.get())
                 .count();
     }
-
-
 
     protected List<String> dividirEspacoDeBusca() {
         List<String> subconjuntos = new ArrayList<>();
