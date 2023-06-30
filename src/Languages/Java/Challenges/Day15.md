@@ -42,6 +42,5 @@ Char ch = 65;
 System.out.println(ch);
 
 SAIDA:
-
 Z
 
