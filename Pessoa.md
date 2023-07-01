@@ -1,12 +1,12 @@
 ##   *Develope Information*
 
--  Nome : Eduardo Alves de Araújo
--  Idade : 69
--  Curso : UFPB
--  Linguagem : Java
+-  Nome : 
+-  Idade : 
+-  Curso : (Ex: UFPB)
+-  Linguagem : (Ex: Java)
 
 
--  Descrição: Essa e uma Descrição.
+-  Descrição:
 
 
 -  Instagram : (link) 
@@ -27,7 +27,7 @@
 
 Declaro solenemente que irei assumir todos os desafios com dedicação máxima, a fim de solidificar meus conhecimentos. Absterei-me de buscar soluções prontas ou algoritmos na internet e não recorrerei a qualquer forma de inteligência artificial para realizar as tarefas em meu lugar. Comprometo-me a enfrentar cada desafio com minhas próprias habilidades e esforços, buscando aprimorar minha compreensão e proficiência no assunto.
 
-Assinatura: Eduardo Alves de Araújo
+Assinatura:
 
 
 
