@@ -9,8 +9,11 @@ import java.util.concurrent.atomic.AtomicLong;
 
 
 public class Day18Solucao {
+  
     private String senhaDesajada = "#y3";
     private Integer tentativa = 0;
+
+
     protected void decodificarSenha(int numThreads) {
         AtomicLong tempoInicial = new AtomicLong(System.currentTimeMillis());
         AtomicBoolean senhaEncontrada = new AtomicBoolean(false);

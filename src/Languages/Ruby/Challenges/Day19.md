@@ -2,7 +2,7 @@
 
 Desafio: 
 
-Neste desafio, você deve criar um programa em Java que receba duas datas (data de início e data de fim) e calcule a duração entre essas datas em dias, semanas, anos e horas.
+Neste desafio, você deve criar um programa que receba duas datas (data de início e data de fim) e calcule a duração entre essas datas em dias, semanas, anos e horas.
 
 Instruções:
 
