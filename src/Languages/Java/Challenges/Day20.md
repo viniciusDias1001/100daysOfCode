@@ -9,9 +9,11 @@ Crie um programa que dê ao usuario duas opcoes: Codificar decinal para binario 
 Exemplo de entrada:
 
 CODIFICAR [MECANISMO PARA RECONHECER OPERAÇÃO DE SUA PREFERÊNCIA]
+
 20
 
 DECODIFICAR [MECANISMO PARA RECONHECER OPERAÇÃO DE SUA PREFERÊNCIA]
+
 10101
 
 ---
