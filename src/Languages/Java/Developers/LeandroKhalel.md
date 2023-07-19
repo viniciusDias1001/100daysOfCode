@@ -1,7 +1,7 @@
 ##   *Develope Information*
 
--  Nome : 
--  Idade : 
+-  Nome : Leandro Khalel
+-  Idade : 19
 -  Curso : (Ex: UFPB)
 -  Linguagem : (Ex: Java)
 
@@ -9,16 +9,16 @@
 -  Descrição:
 
 
--  Instagram : (link) 
+-  Instagram : (link)
 -  Linkedin : (link)
 - GitHub : (link)
-- PageHome : (link) 
+- PageHome : (link)
 
 - Livros em que está lendo :
 
 ##  *Objective*
 
- - (coloque aqui porquer quer participar desses 100 dias de codificação)
+- (coloque aqui porquer quer participar desses 100 dias de codificação)
 
 
 
