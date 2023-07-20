@@ -1,0 +1,15 @@
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\bin\Debug\net7.0\Day01Resolvido.exe
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\bin\Debug\net7.0\Day01Resolvido.deps.json
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\bin\Debug\net7.0\Day01Resolvido.runtimeconfig.json
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\bin\Debug\net7.0\Day01Resolvido.dll
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\bin\Debug\net7.0\Day01Resolvido.pdb
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\Day01Resolvido.csproj.AssemblyReference.cache
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\Day01Resolvido.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\Day01Resolvido.AssemblyInfoInputs.cache
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\Day01Resolvido.AssemblyInfo.cs
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\Day01Resolvido.csproj.CoreCompileInputs.cache
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\Day01Resolvido.dll
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\refint\Day01Resolvido.dll
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\Day01Resolvido.pdb
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\Day01Resolvido.genruntimeconfig.cache
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day01Resolvido\obj\Debug\net7.0\ref\Day01Resolvido.dll
