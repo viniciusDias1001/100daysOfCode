@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿Console.Write("Informe quantos pares de valores inteiros serão lidos: ");
+=======
+Console.Write("Informe quantos pares de valores inteiros serão lidos: ");
+>>>>>>> fd328b61c4b412ff19b83fa44e4c8ce346ded3dd
 int N = Convert.ToInt32(Console.ReadLine());
 
 for (int i = 0; i < N; i++)
@@ -18,4 +22,8 @@ for (int i = 0; i < N; i++)
     {
         Console.WriteLine("Divisão impossível");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fd328b61c4b412ff19b83fa44e4c8ce346ded3dd
