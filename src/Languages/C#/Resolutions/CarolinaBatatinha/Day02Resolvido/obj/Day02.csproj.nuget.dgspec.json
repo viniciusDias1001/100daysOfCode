@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day01Resolvido\\Day01Resolvido.csproj": {}
+    "D:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day02\\Day02.csproj": {}
   },
   "projects": {
-    "d:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day01Resolvido\\Day01Resolvido.csproj": {
+    "D:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day02\\Day02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day01Resolvido\\Day01Resolvido.csproj",
-        "projectName": "Day01Resolvido",
-        "projectPath": "d:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day01Resolvido\\Day01Resolvido.csproj",
+        "projectUniqueName": "D:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day02\\Day02.csproj",
+        "projectName": "Day02",
+        "projectPath": "D:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day02\\Day02.csproj",
         "packagesPath": "C:\\Users\\batat\\.nuget\\packages\\",
-        "outputPath": "d:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day01Resolvido\\obj\\",
+        "outputPath": "D:\\Documentos\\Dev's life\\100daysOfCode\\src\\Languages\\C#\\Resolutions\\CarolinaBatatinha\\Day02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\batat\\AppData\\Roaming\\NuGet\\NuGet.Config",
