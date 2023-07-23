@@ -1,0 +1,15 @@
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\bin\Debug\net7.0\Day04.exe
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\bin\Debug\net7.0\Day04.deps.json
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\bin\Debug\net7.0\Day04.runtimeconfig.json
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\bin\Debug\net7.0\Day04.dll
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\bin\Debug\net7.0\Day04.pdb
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\Day04.csproj.AssemblyReference.cache
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\Day04.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\Day04.AssemblyInfoInputs.cache
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\Day04.AssemblyInfo.cs
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\Day04.csproj.CoreCompileInputs.cache
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\Day04.dll
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\refint\Day04.dll
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\Day04.pdb
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\Day04.genruntimeconfig.cache
+D:\Documentos\Dev's life\100daysOfCode\src\Languages\C#\Resolutions\CarolinaBatatinha\Day04\obj\Debug\net7.0\ref\Day04.dll
