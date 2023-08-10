@@ -10,6 +10,8 @@ import java.util.concurrent.Future;
 public class Day21Solucao {
 
     private List<Integer> numerosEntrada = new ArrayList<>();
+    private int contadorThreads = 0;
+
 
     public void receberLista(){
         Scanner entrada = new Scanner(System.in);
@@ -30,6 +32,7 @@ public class Day21Solucao {
         for (int i = 0; i < this.numerosEntrada.size(); i++) {
             int numero = numerosEntrada.get(i);
             Future<String> resultado = executor.submit(() -> {
+                contadorThreads++;
                 boolean primo = isPrime(numero);
                 return "O número " + numero + (primo ? " é primo." : " não é primo.");
             });
@@ -43,6 +46,7 @@ public class Day21Solucao {
             }
         }
         executor.shutdown();
+        System.out.println("Total de threads criadas: " + contadorThreads);
     }
 
 
